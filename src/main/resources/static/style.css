@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #1b1d2a;
+  color: #f1f1f1;
+  padding: 24px 16px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  color: #ffcb05;
+}
+
+header p {
+  color: #a9adc1;
+  margin-top: 4px;
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+input, select, button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+input, select {
+  background: #2a2d40;
+  color: #f1f1f1;
+}
+
+input {
+  width: 260px;
+}
+
+button {
+  background: #ffcb05;
+  color: #1b1d2a;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+button.secundario {
+  background: #3a3e57;
+  color: #f1f1f1;
+}
+
+#mensagem {
+  text-align: center;
+  color: #ff8a8a;
+  min-height: 24px;
+  margin-bottom: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #2a2d40;
+  border-radius: 14px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.15s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 110px;
+  height: 110px;
+  image-rendering: pixelated;
+}
+
+.card .numero {
+  color: #a9adc1;
+  font-size: 0.85rem;
+}
+
+.card h2 {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin: 4px 0 8px;
+}
+
+.tipos {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.tipo {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  background: #777;
+  color: #fff;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: #c9cce0;
+}
+
+.paginacao {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.tipo-fire { background: #f08030; }
+.tipo-water { background: #6890f0; }
+.tipo-grass { background: #78c850; }
+.tipo-electric { background: #e0b800; color: #222; }
+.tipo-psychic { background: #f85888; }
+.tipo-ice { background: #5cc8c8; }
+.tipo-dragon { background: #7038f8; }
+.tipo-dark { background: #5a4a40; }
+.tipo-fairy { background: #ee99ac; }
+.tipo-fighting { background: #c03028; }
+.tipo-poison { background: #a040a0; }
+.tipo-ground { background: #b89a40; }
+.tipo-flying { background: #8f78e0; }
+.tipo-bug { background: #8fa010; }
+.tipo-rock { background: #a08820; }
+.tipo-ghost { background: #705898; }
+.tipo-steel { background: #a0a0b8; }
+.tipo-normal { background: #8a8a60; }
